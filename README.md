@@ -1,3 +1,3 @@
 # website
 
-This repository will be for noah.win
+This repository is for my portfolio site noah.win
