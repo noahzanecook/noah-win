@@ -1,13 +1,12 @@
-
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import ThreeScene from '../components/ThreeScene';
 import Layout from '../components/Layout';
 import { DecorativeCircle, DecorativeSquare } from '../components/DecorativeShapes';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/components/ui/use-toast';
+import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -50,89 +49,55 @@ const Contact = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl font-bold mb-4">Get In Touch</h1>
+              <h1 className="text-8xl font-['Barlow'] mb-4">hello@noah.win</h1>
+              <div className="w-full h-1 bg-gray-200 my-8"></div>
               <p className="text-xl text-gray-600 mb-6">
                 Have a question or want to work together? Feel free to contact me.
               </p>
-              <div className="mt-10 mb-16">
-                <ThreeScene sceneType="both" />
-              </div>
             </motion.div>
           </div>
         </section>
         
-        {/* Contact Form */}
-        <section className="section-padding bg-secondary/20">
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Your Name
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="John Doe"
-                    required
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Email Address
-                  </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="john@example.com"
-                    required
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
-                    Message
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Your message here..."
-                    rows={5}
-                    required
-                  />
-                </div>
-                
-                <Button type="submit" className="w-full">Send Message</Button>
-              </form>
-            </div>
-          </div>
-        </section>
-        
+        <div className="-mt-40"></div>
         {/* Contact Info */}
         <section className="section-padding">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="section-title">Other Ways to Connect</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2">Email</h3>
-                <p>hello@example.com</p>
-              </div>
-              <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2">LinkedIn</h3>
-                <p>linkedin.com/in/yourprofile</p>
-              </div>
-              <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2">Twitter</h3>
-                <p>@yourhandle</p>
-              </div>
+            {/* <h2 className="section-title font-['Barlow']">Connect With Me</h2> */}
+            <div className="flex justify-center space-x-8 mt-8">
+              <a
+                href="https://github.com/noahzanecook"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
+                aria-label="GitHub"
+              >
+                <Github size={32} className="text-gray-700" />
+              </a>
+              <a
+                href="https://linkedin.com/in/noahzanecook"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={32} className="text-gray-700" />
+              </a>
+              {/* <a
+                href="https://twitter.com/noahzanecook"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
+                aria-label="Twitter"
+              >
+                <Twitter size={32} className="text-gray-700" />
+              </a> */}
+              <a
+                href="mailto:hello@noah.win"
+                className="p-4 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
+                aria-label="Email"
+              >
+                <Mail size={32} className="text-gray-700" />
+              </a>
             </div>
           </div>
         </section>
