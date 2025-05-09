@@ -8,50 +8,50 @@ const Projects = () => {
     {
       id: 1,
       title: "Haymakers",
-      description: "A 3D browser fighting game built with Three.js and Rapier.rs",
-      tags: ["React", "Three.js", "Node.js", "Rapier.rs"],
+      description: "A 3D browser fighting game built with a multiplayer lobby system",
+      tags: ["Web Dev", "Physics", "React", "Node.js", "Three.js", "Rapier.rs"],
       link: "https://github.com/noahzanecook/haymakers",
       image: "/src/assets/haymakers.png"
     },
     {
       id: 2,
-      title: "SpecOps.tech",
-      description: "An interactive dashboard with data visualization",
-      tags: ["TypeScript", "D3.js", "Firebase"],
-      link: "#",
-      image: "/src/assets/project2.png"
-    },
-    {
-      id: 3,
-      title: "Flow AI",
-      description: "A mobile-first e-commerce platform",
-      tags: ["React Native", "GraphQL", "Node.js"],
+      title: "Flow AI (Closed Beta)",
+      description: "A student productivity tool that uses AI to generate personalized study plans based on course material",
+      tags: ["Web Dev", "Next.js", "Supabase", "OpenAI", "TypeScript", "Deno", "Tailwind"],
       link: "#",
       image: "/src/assets/project3.png"
     },
     {
-      id: 4,
-      title: "Home Lab",
-      description: "A modern web application built with React and Three.js",
-      tags: ["React", "Three.js", "Tailwind"],
-      link: "#",
-      image: "/src/assets/project4.png"
+      id: 3,
+      title: "SpecOps.tech",
+      description: "ImmerseGT 2025 Hackathon project. Snapchat Spectacles multiplayer laser tag AR experience",
+      tags: ["Web Dev", "React", "Tailwind", "Snapchat Spectacles", "Augmented Reality"],
+      link: "https://specops.tech",
+      image: "/src/assets/specops.png"
     },
     {
-      id: 5,
+      id: 4,
       title: "Ubiquity Browser",
-      description: "A modern web application built with React and Three.js",
-      tags: ["React", "Three.js", "Tailwind"],
+      description: "Very basic web browser built fully from scratch by requesting HTML and CSS and rendering them using Tkinter",
+      tags: ["Python", "Tkinter", "Networking"],
       link: "#",
       image: "/src/assets/project5.png"
     },
     {
       id: 6,
-      title: "Old CS Mods",
-      description: "A modern web application built with React and Three.js",
-      tags: ["React", "Three.js", "Tailwind"],
+      title: "Counter Strike Physics Mod",
+      description: "Client with special features for abusing physic-related quirks in the Source Engine",
+      tags: ["Reverse Engineering", "C++", "Lua", "Javascript"],
       link: "#",
       image: "/src/assets/project6.png"
+    },
+    {
+      id: 4,
+      title: "Home Lab",
+      description: "A home lab environment for hosting files and a local LLM",
+      tags: ["Linux", "Docker", "LLM (Qwen2.5)", "File Hosting"],
+      link: "#",
+      image: "/src/assets/project4.png"
     }
   ];
   return (
@@ -113,9 +113,15 @@ const Projects = () => {
                         </span>
                       ))}
                     </div>
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">
-                      <Button variant="outline" className="w-full">View Project</Button>
-                    </a>
+                    {project.link === '#' ? (
+                      <Button variant="outline" className="w-full" disabled>
+                        Private repo/dead link. Contact for details
+                      </Button>
+                    ) : (
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        <Button variant="outline" className="w-full">View Project</Button>
+                      </a>
+                    )}
                   </div>
                 </motion.div>
               ))}
