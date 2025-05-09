@@ -7,22 +7,14 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Haymakers",
-      description: "A 3D browser fighting game built with a multiplayer lobby system",
-      tags: ["Web Dev", "Physics", "React", "Node.js", "Three.js", "Rapier.rs"],
-      link: "https://github.com/noahzanecook/haymakers",
-      image: "/src/assets/haymakers.png"
-    },
-    {
-      id: 2,
       title: "Flow AI (Closed Beta)",
       description: "A student productivity tool that uses AI to generate personalized study plans based on course material",
       tags: ["Web Dev", "Next.js", "Supabase", "OpenAI", "TypeScript", "Deno", "Tailwind"],
       link: "#",
-      image: "/src/assets/project3.png"
+      image: "/src/assets/flowai.png"
     },
     {
-      id: 3,
+      id: 2,
       title: "SpecOps.tech",
       description: "ImmerseGT 2025 Hackathon project. Snapchat Spectacles multiplayer laser tag AR experience",
       tags: ["Web Dev", "React", "Tailwind", "Snapchat Spectacles", "Augmented Reality"],
@@ -30,12 +22,20 @@ const Projects = () => {
       image: "/src/assets/specops.png"
     },
     {
+      id: 3,
+      title: "Haymakers",
+      description: "A 3D browser fighting game built with a multiplayer lobby system",
+      tags: ["Web Dev", "Physics", "React", "Node.js", "Three.js", "Rapier.rs"],
+      link: "https://github.com/noahzanecook/haymakers",
+      image: "/src/assets/haymakers.png"
+    },
+    {
       id: 4,
       title: "Ubiquity Browser",
       description: "Very basic web browser built fully from scratch by requesting HTML and CSS and rendering them using Tkinter",
       tags: ["Python", "Tkinter", "Networking"],
       link: "#",
-      image: "/src/assets/project5.png"
+      image: "/src/assets/ubiquity.png"
     },
     {
       id: 6,
@@ -43,7 +43,7 @@ const Projects = () => {
       description: "Client with special features for abusing physic-related quirks in the Source Engine",
       tags: ["Reverse Engineering", "C++", "Lua", "Javascript"],
       link: "#",
-      image: "/src/assets/project6.png"
+      image: "/src/assets/cs.png"
     },
     {
       id: 4,
