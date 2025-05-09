@@ -10,8 +10,8 @@ const Projects = () => {
       title: "Flow AI (Closed Beta)",
       description: "A student productivity tool that uses AI to generate personalized study plans based on course material",
       tags: ["Web Dev", "Next.js", "Supabase", "OpenAI", "TypeScript", "Deno", "Tailwind"],
-      link: "#",
-      image: "/src/assets/flowai.png"
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScFBM49elZXBPn8tEDBihXTrir6y765rB0j86bTOv8xzzvsiw/viewform?usp=dialog",
+      image: "/assets/flowai.png"
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const Projects = () => {
       description: "ImmerseGT 2025 Hackathon project. Snapchat Spectacles multiplayer laser tag AR experience",
       tags: ["Web Dev", "React", "Tailwind", "Snapchat Spectacles", "Augmented Reality"],
       link: "https://specops.tech",
-      image: "/src/assets/specops.png"
+      image: "/assets/specops.png"
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ const Projects = () => {
       description: "A 3D browser fighting game built with a multiplayer lobby system",
       tags: ["Web Dev", "Physics", "React", "Node.js", "Three.js", "Rapier.rs"],
       link: "https://github.com/noahzanecook/haymakers",
-      image: "/src/assets/haymakers.png"
+      image: "/assets/haymakers.png"
     },
     {
       id: 4,
@@ -35,7 +35,7 @@ const Projects = () => {
       description: "Very basic web browser built fully from scratch by requesting HTML and CSS and rendering them using Tkinter",
       tags: ["Python", "Tkinter", "Networking"],
       link: "#",
-      image: "/src/assets/ubiquity.png"
+      image: "/assets/ubiquity.png"
     },
     {
       id: 6,
@@ -43,7 +43,7 @@ const Projects = () => {
       description: "Client with special features for abusing physic-related quirks in the Source Engine",
       tags: ["Reverse Engineering", "C++", "Lua", "Javascript"],
       link: "#",
-      image: "/src/assets/cs.png"
+      image: "/assets/cs.png"
     },
     {
       id: 4,
