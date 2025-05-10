@@ -1,5 +1,3 @@
-todo: finish adding projects, trim off unused files, finish readme
-
 # Noah.win - My Portfolio
 
 Welcome to my personal portfolio website!
