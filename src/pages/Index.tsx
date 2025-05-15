@@ -17,7 +17,7 @@ const Index = () => {
             animate="visible"
             variants={fadeInVariant}
             transition={{ duration: 0.6 }}
-            className="md:w-2/4 w-full text-center"
+            className="md:w-2/4 w-full text-center px-6 md:px-0"
           >
             <h1 className="text-6xl mb-8 font-['Barlow']">Welcome</h1>
             <p className="text-xl mb-10 mx-auto font-['Arial']">

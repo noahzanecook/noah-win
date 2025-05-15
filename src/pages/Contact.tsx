@@ -49,7 +49,7 @@ const Contact = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-8xl font-['Barlow'] mb-4">hello@noah.win</h1>
+              <h1 className="text-4xl sm:text-6xl md:text-8xl font-['Barlow'] mb-4 px-4">hello@noah.win</h1>
               <div className="w-full h-1 bg-gray-200 my-8"></div>
               <p className="text-xl text-gray-600 mb-6">
                 Have a question or want to work together? Feel free to contact me.
