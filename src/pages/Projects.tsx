@@ -31,6 +31,14 @@ const Projects = () => {
     },
     {
       id: 4,
+      title: "SmartFind",
+      description: "CS 2340 final project. Uses Gemini to summarize user reviews for local businesses which impacts your search results",
+      tags: ["Python", "LLM (Gemini)", "Google Maps API", "Django", "Agile"],
+      link: "#",
+      image: "/assets/smartfind.png"
+    },
+    {
+      id: 5,
       title: "Ubiquity Browser",
       description: "Very basic web browser built fully from scratch by requesting HTML and CSS and rendering them using Tkinter",
       tags: ["Python", "Tkinter", "Networking"],
@@ -46,7 +54,7 @@ const Projects = () => {
       image: "/assets/cs.png"
     },
     {
-      id: 4,
+      id: 7,
       title: "Home Lab",
       description: "A home lab environment for hosting files and a local LLM",
       tags: ["Linux", "Docker", "LLM (Qwen2.5)", "File Hosting"],
